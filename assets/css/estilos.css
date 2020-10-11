@@ -22,6 +22,9 @@ body{
 .logo{
     width: auto;
 }
+.logo span{
+    font-weight: bold;
+}
 
 .logo .logo_a{
     width: 100%;
@@ -51,6 +54,10 @@ body{
     }
 }
 
+.logo span{
+    font-size: 3.1rem;;
+}
+
 .logo .logo_a img{
     max-height: 50px;
     flex-grow: 0.1;
@@ -67,17 +74,13 @@ body{
     justify-content: space-around;
     align-items: flex-end;
 }
-
 .nav a{
     margin: 0 10px;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
 }
-
-.nav a:hover{
-    cursor: pointer;
-    color: var(--orange);
+.nav a:hover {
+    box-shadow: inset 0 -2px 0 var(--orange);
 }
-
 .hello{
 
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/xena-background.jpeg");
@@ -110,7 +113,7 @@ body{
 
 .hello h1, h2{
     color: white;
-    font-size: 3em;
+    font-size: 5.5em;
     text-align: center;
 }
 
@@ -119,64 +122,8 @@ body{
 }
 
 .hello h2{
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
-
-
-@media (max-width: 930px) {
-    .header{
-        margin-top: 5px;
-        flex-flow: column wrap;
-        height: 20vh;
-        justify-content: space-around;
-    }
-    .logo, .nav{
-        width: 100%;
-    }
-    .nav{
-        margin: 0;
-        justify-content: space-evenly;
-    }
-    .nav a{
-        margin: 0px 15px;
-    }
-    .logo{
-        font-size: 2.1em;
-        width: 80%;
-    }
-    .logo .logo_a{
-        justify-content: center;
-    }
-}
-
-@media (max-width: 930px) {
-    .hello article *{
-        margin: 0 25px;
-    }
-   
-}
-
-@media (max-width: 480px) {
-
-    .header{
-        position: relative;
-    }
-    .hello{
-        height: 80vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/xena-background-small.jpeg");
-    }
-
-    .logo{
-        font-size: 1.5em;
-    }
-    .nav a{
-        font-size: 1.1rem;
-        margin: 0 0px;
-    };
-
-
-}
-
 .presentation{
     margin: 20px;
     text-align: center;
@@ -210,7 +157,7 @@ footer .links {
 
 footer .links a {
 	flex-grow:1;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 	color:#fff;
 	padding:10px;
 	text-align: center;
@@ -237,7 +184,7 @@ footer .social a {
 
     border-radius: 50%;
 
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .social a:hover{
@@ -261,3 +208,252 @@ footer .social a {
 /* .social a:hover:before{
     transform: scale(1);
 } */
+
+
+
+
+
+/* CV */
+
+.cv-index{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.hello-cv{
+    background: none;
+}
+
+.hello-cv article h1{
+    margin-top: 40px;
+    color: rgb(65, 65, 65);
+    font-size: 3rem;
+}
+.hello-cv article p{
+    font-size: 1.5rem;
+}.hello-cv article p i{
+    margin: 0;
+}
+.hello-cv article a{
+    font-size: 1.7rem;
+    margin-top: 30px;
+    text-decoration: none;
+    color: var(--orange);
+    transition: all 0.3s ease-out;
+}
+.hello-cv article a:hover{
+    box-shadow: inset 0 -2px 0 var(--orange);
+    opacity: 0.8;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 50px;
+}
+.section h2{
+    width: 100%;
+    text-align: right;
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 900;  
+    font-size: 3rem;
+    color: #333;
+}
+.section ul{
+    margin: 30px 0;
+    padding-left: 40px;
+}
+.section li{
+    font-size: 1.7rem;
+    list-style-type: disc;
+}
+
+.cv-contact li a{
+    color: var(--orange);
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.cv-contact li a:hover{
+    box-shadow: inset 0 -2px 0 var(--orange);
+    opacity: 0.8;
+}
+
+.cv-about h2{
+    margin-bottom: 10px;
+}
+.cv-about p{
+    margin: 15px 0;
+    font-size: 1.7rem;
+}
+#tecnologias h2{
+    margin-bottom: 20px;
+}
+#tecnologias aside{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#tecnologias aside img{
+    width: 11vw;
+    height: 20vh;
+}
+#projects figure{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+#projects figure img{
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+}
+#projects figure figcaption{
+    font-weight: bold;
+}
+#experiencia-profesional h2{
+    margin-bottom: 30px;
+}
+
+.webimpacto-img{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.webimpacto-img ~ figcaption{
+    margin-left: 50px;
+}
+
+@media (max-width: 767px){
+    .cv-index{
+        display: none;
+    }
+    .section li{
+        font-size: 1.2rem;
+    }
+    .cv-about p{
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+    #tecnologias aside img{
+        width: 15vw;
+        height: 15vh;
+    }
+}
+
+@media (max-width: 930px) and (min-width: 481px) {
+    .header{
+        margin-top: 5px;
+        flex-flow: column wrap;
+        height: 20vh;
+        justify-content: space-around;
+    }
+    .logo, .nav{
+        width: 100%;
+    }
+    .nav{
+        margin: 0;
+        justify-content: space-evenly;
+    }
+    .nav a{
+        margin: 0px 15px;
+    }
+    .logo{
+        font-size: 2.1rem;
+        width: 80%;
+    }
+    .logo .logo_a{
+        justify-content: center;
+    }
+    .hello article *{
+        margin: 0 25px;
+    }
+    .section{
+        min-height: 100vh;
+    }
+    .section h2{
+        text-align: left;
+    }
+    .section li{
+        font-size: 1.4rem;
+    }
+    .cv-about p{
+        margin: 10px 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header{
+        margin-top: 5px;
+        flex-flow: column wrap;
+        height: 20vh;
+        justify-content: space-around;
+        position: relative;
+    }
+    .hello{
+        height: 80vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/xena-background-small.jpeg");
+    }
+    .hello article{
+        margin: 0px;
+        font-size: 1rem;
+    }
+    .hello-cv{
+        background: none;
+    }
+    .logo, .nav{
+        width: 100%;
+    }
+    .nav{
+        margin: 0;
+    }
+    .logo{
+        justify-content: center;
+        font-size: 2.1rem;
+        width: 80%;  
+    }
+    .logo .logo_a{
+        justify-content: center;
+    }
+    .logo span{
+        font-size: 1.7rem;
+    }
+    .hello article *{
+        margin: 0 0px;
+    }
+    .hello h1, h2{
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .hello h2{
+        font-size: 2rem;
+    }
+    .nav a{
+        font-size: 1.1rem;
+        margin: 0 0px;
+    }
+    .section{
+        min-height: 50vh;
+        margin: 60px 40px;
+    }
+    .section h2{
+        text-align: left;
+    }
+    .cv-about p{
+        margin: 10px 0;
+        font-size: 1.25rem;
+    }
+    .cv-edu li, .cv-contact li, .cv-skills li{
+        font-size: 1.4rem;
+    }
+}
