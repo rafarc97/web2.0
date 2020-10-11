@@ -35,15 +35,9 @@ body{
     align-items: center;
 }
 
-.logo .logo_a:hover{
+.logo .logo_a{
     animation-name: efecto;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-}
-.hello img:hover{
-    animation-name: efecto;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
@@ -406,6 +400,58 @@ footer .social a {
 
 
 
+/* AHORA */
+
+.ahora h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.ahora .section p{
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+.section-2-ahora h3{
+    color: #333;
+    font-weight: 900;
+}
+.section-2-ahora ol{
+    color: white;
+    background-color: #1f1f1f;
+    margin: 30px 20px;
+}
+.section-2-ahora ol li:first-child{
+    margin-top: 30px;
+}
+.section-2-ahora ol li{
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+.section-2-ahora ol li a:link{
+    color: var(--orange);
+}
+.section-2-ahora ol>a{
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    margin: 10px 10px;
+    transition: all 0.3s ease-out;
+}
+.section-2-ahora ol>a small{
+    font-size: 1.3rem;
+    font-weight: bold !important;
+}
+.section-2-ahora ol>a:hover{
+    color: black;
+    background-color: rgb(255, 186, 57);
+}
+
+
 
 @media (max-width: 767px){
     .cv-index{
@@ -541,5 +587,33 @@ footer .social a {
     }
     .projects-category p{
         font-size: 1.5rem;
+    }
+
+    .ahora h1{
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+    .section-ahora{
+        margin: 20px 10px;
+    }
+    .ahora .section p{
+        font-size: 1.4rem;
+    }
+    .section-2-ahora{
+        margin: 10px 5px;
+    }
+    .section-2-ahora ol{
+        margin: 10px 0px;
+    }
+    .section-2-ahora ol>a small{
+        font-size: 1rem;
+        font-weight: bold !important;
+    }
+}
+
+@media (max-width: 350px){
+    .section-2-ahora ol>a small{
+        font-size: 0.8rem;
+        font-weight: bold !important;
     }
 }
