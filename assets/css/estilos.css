@@ -434,6 +434,9 @@ footer .social a {
 .section-2-ahora ol li a:link{
     color: var(--orange);
 }
+.section-2-ahora ol li a:visited{
+    color: var(--orange);
+}
 .section-2-ahora ol>a{
     font-size: 1.2rem;
     color: white;
@@ -447,10 +450,43 @@ footer .social a {
     font-weight: bold !important;
 }
 .section-2-ahora ol>a:hover{
-    color: black;
-    background-color: rgb(255, 186, 57);
+    
+    background-color: red;
 }
 
+
+
+
+
+/* FORM */
+.form-container{
+    background-color: rgb(238, 197, 161);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: auto;
+    max-width: 700px;
+    height: 75vh;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+
+
+.btn{
+    font-weight: 800;
+
+}
+.btn.btn-primary{
+    font-weight: 800;
+    background-color: var(--orange) ;
+}
+.btn.btn-primary:hover{
+    color: black;
+    background-color: rgb(255, 190, 68)
+}
 
 
 @media (max-width: 767px){
@@ -467,6 +503,9 @@ footer .social a {
     #tecnologias aside img{
         width: 15vw;
         height: 15vh;
+    }
+    .form-container{
+        margin: 20px 20px;
     }
 }
 
@@ -598,6 +637,10 @@ footer .social a {
     }
     .ahora .section p{
         font-size: 1.4rem;
+    }
+    .section-ahora img{
+            margin: 0;
+            padding: 0;
     }
     .section-2-ahora{
         margin: 10px 5px;

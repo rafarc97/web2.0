@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="../assets/img/xena.png"
-    />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/estilos.css">
 
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="../assets/img/xena.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/estilos.css">
 
-    
-    <title>Rafa Calvente Web</title>
-
-    <!-- SEO -->
-    <meta
-      name="keywords"
-      content="blog,projects,react,reactjs,javascript,html,html5,css,css3,bootstrap,materialize,python,c"
-    />
-    <meta
-      name="description"
-      content="Blog to show my personal projects about web technology, develop and design specially"
-    />
-    <meta name="author" content="rafael rodríguez calvente" />
-  </head>
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
 
-  <body>
-    
-    <!-- Header -->
-    <header class="header">
+  <title>Rafa Calvente Web</title>
 
-        <h2 class="logo">
-            <a class="logo_a" href="./">
-            <img class="icon-x2" src="../assets/img/xena.svg" alt="xena" />
-            <span>rafacalventeweb</span>
-            </a>
-        </h2>
+  <!-- SEO -->
+  <meta name="keywords"
+    content="blog,projects,react,reactjs,javascript,html,html5,css,css3,bootstrap,materialize,python,c" />
+  <meta name="description"
+    content="Blog to show my personal projects about web technology, develop and design specially" />
+  <meta name="author" content="rafael rodríguez calvente" />
+</head>
 
-        <nav class="nav">
-            <a href="../proyectos/proyectos.html"> Proyectos </a>
-            <a href="../cv/cv.html"> CV </a>
-            <a href="../ahora/ahora.html"> Ahora </a>
-            <a href="../contacto/contacto.html"> Notas </a>
-        </nav>
 
-    </header>
+<body>
 
-    
+  <!-- Header -->
+  <header class="header">
+
+    <h2 class="logo">
+      <a class="logo_a" href="../index.html">
+        <img class="icon-x2" src="../assets/img/xena.svg" alt="xena" />
+        <span>rafacalventeweb</span>
+      </a>
+    </h2>
+
+    <nav class="nav">
+      <a href="../proyectos/proyectos.html"> Proyectos </a>
+      <a href="../cv/cv.html"> CV </a>
+      <a href="../ahora/ahora.html"> Ahora </a>
+      <a href="../contacto/contacto.html"> Contáctame </a>
+    </nav>
+
+  </header>
+
+  <hr>
+
+
+  <div class="form-container">
+    <form action="https://formsubmit.co/rafaelrodriguezcalvente@gmail.com" method="POST" target="_blank">
+      <legend name="contact">Escríbe tu mensaje 📩</legend>
+      <br>
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Intorduce tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Intorduce tu email">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Texto</label>
+        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
